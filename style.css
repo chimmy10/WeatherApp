@@ -1,0 +1,143 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Arial", sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+	background-color: rgb(36, 36, 36);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 4rem 6rem 3rem 3rem;
+	background-color: black;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 2rem;
+}
+
+.first-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+.search-icon {
+	fill: rgb(36, 36, 36);
+	color: white;
+	width: 1.1rem; /* Adjust as needed */
+	height: 1.1rem; /* Adjust as needed */
+}
+
+.button:hover .search-icon {
+	fill: white;
+	color: black;
+}
+
+.location-button {
+	font-weight: bold;
+	color: white;
+	transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.location-button:hover {
+	color: black;
+	transform: scale(1.1); /* Increase size by 10% on hover */
+}
+
+.input-text {
+	width: 100%; /* Full width for responsiveness */
+	max-width: 400px; /* Maximum width */
+	padding: 10px;
+	background-color: rgb(36, 36, 36);
+	font-size: 1.2rem;
+	color: #fff;
+	border: 2px solid #ccc; /* Border color */
+	border-radius: 5rem; /* Rounded corners */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+	transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.input-text:focus {
+	border-color: grey; /* Change border color on focus */
+	outline: none; /* Remove default outline */
+	box-shadow: 0 0 5px grey; /* Highlight shadow */
+}
+
+.input-text:hover {
+	transform: scale(1.1); /* Increase size by 10% on hover */
+}
+
+.input-text::placeholder {
+	font-weight: bold;
+	font-size: 1.1rem;
+	color: #cecece; /* Placeholder text color */
+}
+
+button {
+	background-color: rgb(36, 36, 36);
+	border: none;
+	border-radius: 10rem;
+	padding: 0.7rem 0.7rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: white;
+	fill: black;
+}
+
+.second-container {
+	color: white;
+	padding: 1.7rem 0rem;
+}
+
+.weather-icon {
+	width: 2rem; /* Adjust as needed */
+	height: 2rem; /* Adjust as needed */
+}
+
+.weather-temp {
+	font-size: 2.4rem;
+	font-weight: bold;
+	padding: 0.8rem 0rem;
+}
+
+.weather-title {
+	font-size: 1.8rem;
+	font-weight: bold;
+	padding: 0.8rem 0rem;
+}
+
+.weather-tempname,
+.weather-humi,
+.weather-speed {
+	font-size: 1.2rem;
+	padding: 0.1rem 0rem;
+}
+
+.weather-tempname {
+	padding: 1.1rem 0rem;
+}
+
+.weather-arrange {
+	display: flex;
+	gap: 0.8rem;
+	align-items: center;
+}
+
+.hidden {
+	display: none;
+}
